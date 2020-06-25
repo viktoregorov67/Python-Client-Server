@@ -1,9 +1,0 @@
-buyers:
-- Ivanov
-- Petrov
-- Sidorov
-buyers_waste:
-  Ivanov: 500€
-  Petrov: 100€
-  Sidorov: 75€
-total_buyers: 3
