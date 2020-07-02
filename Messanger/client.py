@@ -2,11 +2,11 @@ import json
 import socket
 import sys
 import time
+import logging
+import log.client_log_config
 
 from common.utils import get_message, send_message
-from common.variables import (
-    ACCOUNT_NAME, ACTION, DEFAULT_IP_ADDRESS, DEFAULT_PORT, ERROR, PRESENCE,
-    RESPONSE, TIME, USER)
+from common.variables import *
 
 
 def create_presence(account_name='Guest'):
@@ -32,6 +32,7 @@ def process_ans(message):
 
 def main():
     """Загружаем параметы коммандной строки."""
+
     try:
         server_address = sys.argv[1]
         server_port = int(sys.argv[2])
@@ -41,7 +42,8 @@ def main():
         server_address = DEFAULT_IP_ADDRESS
         server_port = DEFAULT_PORT
     except ValueError:
-        print('В качестве порта может быть указано только число в диапазоне от 1024 до 65535.')
+        #print('В качестве порта может быть указано только число в диапазоне от 1024 до 65535.')
+        logger.info('В качестве порта может быть указано только число в диапазоне от 1024 до 65535.')
         sys.exit(1)
 
     # Инициализация сокета и обмен.
@@ -51,10 +53,14 @@ def main():
     send_message(transport, message_to_server)
     try:
         answer = process_ans(get_message(transport))
-        print(answer)
+        logger.info(answer)
+        #print(answer)
     except (ValueError, json.JSONDecodeError):
-        print('Не удалось декодировать сообщение сервера.')
+        logger.error('Не удалось декодировать сообщение сервера.')
+        #print('Не удалось декодировать сообщение сервера.')
 
 
 if __name__ == '__main__':
+    logger = logging.getLogger('app.client')
+    logger.info('Программа клиента запущена')
     main()
