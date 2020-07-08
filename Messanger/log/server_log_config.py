@@ -1,20 +1,34 @@
 # logging - стандартный модуль для организации логирования
+import os
+import sys
 import logging
 import logging.config
 import logging.handlers
+from common.variables import LOGGING_LEVEL
 
-# Можно выполнить более расширенную настройку логирования.
-# Создаем объект-логгер с именем app.main:
-logger = logging.getLogger('app.server')
+sys.path.append('../')
 
 # Создаем объект форматирования:
-formatter = logging.Formatter('%(asctime)s %(levelname)s %(module)s %(message)s')
+SERVER_FORMATTER = logging.Formatter('%(asctime)s %(levelname)s %(module)s %(message)s')
+
+# Подготовка имени файла для логирования
+PATH = os.path.dirname(os.path.abspath(__file__))
+PATH = os.path.join(PATH, 'server.log')
 
 # Создаем файловый обработчик логирования (можно задать кодировку):
-sfh = logging.handlers.TimedRotatingFileHandler('log/server.log', encoding='utf-8', interval=1, when='D')
-sfh.setLevel(logging.DEBUG)
-sfh.setFormatter(formatter)
+SERVER_FILE_LOG = logging.handlers.TimedRotatingFileHandler(PATH, encoding='utf-8', interval=1, when='D')
+SERVER_FILE_LOG.setFormatter(SERVER_FORMATTER)
+
+# Создаем объект-логгер
+LOGGER = logging.getLogger('server')
 
 # Добавляем в логгер новый обработчик событий и устанавливаем уровень логирования
-logger.addHandler(sfh)
-logger.setLevel(logging.DEBUG)
+LOGGER.addHandler(SERVER_FILE_LOG)
+LOGGER.setLevel(LOGGING_LEVEL)
+
+# отладка
+if __name__ == '__main__':
+    LOGGER.critical('Критическая ошибка')
+    LOGGER.error('Ошибка')
+    LOGGER.debug('Отладочная информация')
+    LOGGER.info('Информационное сообщение')

@@ -1,8 +1,10 @@
 import json
 
 from common.variables import ENCODING, MAX_PACKAGE_LENGTH
+from common.decorators import log
 
 
+@log
 def get_message(client):
     """
     Функция приёма и декодирования сообщения.
@@ -17,6 +19,7 @@ def get_message(client):
     raise ValueError
 
 
+@log
 def send_message(sock, message):
     """
     Функция кодирования и отправки сообщения.
