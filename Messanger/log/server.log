@@ -1,4 +1,9 @@
-2020-07-02 16:41:53,650 INFO server Сервер запущен
-2020-07-02 16:41:58,792 INFO server {'action': 'presence', 'time': 'Thu Jul  2 16:41:58 2020', 'user': {'account_name': 'Guest'}}
-2020-07-02 16:42:05,795 INFO server {'action': 'presence', 'time': 'Thu Jul  2 16:42:05 2020', 'user': {'account_name': 'Guest'}}
-2020-07-02 16:42:08,052 INFO server {'action': 'presence', 'time': 'Thu Jul  2 16:42:08 2020', 'user': {'account_name': 'Guest'}}
+2020-07-08 22:30:19,201 INFO server Сервер запущен
+2020-07-08 22:33:54,478 INFO server Сервер запущен
+2020-07-08 23:24:04,328 INFO server Сервер запущен
+2020-07-08 23:24:11,208 INFO server Получено сообщение {'action': 'presence', 'time': 'Wed Jul  8 23:24:11 2020', 'user': {'account_name': 'Guest'}}
+2020-07-08 23:28:45,098 INFO server Сервер запущен
+2020-07-08 23:28:49,637 DEBUG decorators Функция get_message была вызвана из функции mainс параметрами (<socket.socket fd=664, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56237)>,), {}.
+2020-07-08 23:28:49,637 INFO server Получено сообщение {'action': 'presence', 'time': 'Wed Jul  8 23:28:49 2020', 'user': {'account_name': 'Guest'}}
+2020-07-08 23:28:49,646 DEBUG decorators Функция process_client_message была вызвана из функции mainс параметрами ({'action': 'presence', 'time': 'Wed Jul  8 23:28:49 2020', 'user': {'account_name': 'Guest'}},), {}.
+2020-07-08 23:28:49,651 DEBUG decorators Функция send_message была вызвана из функции mainс параметрами (<socket.socket fd=664, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56237)>, {'response': 200}), {}.

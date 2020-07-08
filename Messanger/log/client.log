@@ -17,3 +17,19 @@
 2020-07-02 16:42:08,033 INFO client Программа клиента запущена
 2020-07-02 16:42:08,054 INFO client 200 : OK
 2020-07-02 16:44:46,334 INFO client Программа клиента запущена
+2020-07-08 22:30:21,488 INFO client Программа клиента запущена
+2020-07-08 22:30:21,517 ERROR client Не удалось декодировать сообщение сервера.
+2020-07-08 22:30:26,874 INFO client Программа клиента запущена
+2020-07-08 22:33:57,138 INFO client Программа клиента запущена
+2020-07-08 22:33:57,165 ERROR client Не удалось декодировать сообщение сервера.
+2020-07-08 22:34:01,756 INFO client Программа клиента запущена
+2020-07-08 23:24:11,198 INFO client Программа клиента запущена
+2020-07-08 23:24:11,205 DEBUG client Сформировано presence сообщение для пользователя Guest
+2020-07-08 23:24:11,209 INFO client Принят ответ от сервера 200 : OK
+2020-07-08 23:28:49,202 INFO client Программа клиента запущена
+2020-07-08 23:28:49,212 DEBUG client Сформировано presence сообщение для пользователя Guest
+2020-07-08 23:28:49,443 DEBUG decorators Функция create_presence была вызвана из функции mainс параметрами (), {}.
+2020-07-08 23:28:49,455 DEBUG decorators Функция send_message была вызвана из функции mainс параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56237), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 'Wed Jul  8 23:28:49 2020', 'user': {'account_name': 'Guest'}}), {}.
+2020-07-08 23:28:49,651 DEBUG decorators Функция get_message была вызвана из функции mainс параметрами (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56237), raddr=('127.0.0.1', 7777)>,), {}.
+2020-07-08 23:28:49,655 DEBUG decorators Функция process_ans была вызвана из функции mainс параметрами ({'response': 200},), {}.
+2020-07-08 23:28:49,655 INFO client Принят ответ от сервера 200 : OK
