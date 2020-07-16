@@ -1,0 +1,4 @@
+2020-07-02 16:41:53,650 INFO server Сервер запущен
+2020-07-02 16:41:58,792 INFO server {'action': 'presence', 'time': 'Thu Jul  2 16:41:58 2020', 'user': {'account_name': 'Guest'}}
+2020-07-02 16:42:05,795 INFO server {'action': 'presence', 'time': 'Thu Jul  2 16:42:05 2020', 'user': {'account_name': 'Guest'}}
+2020-07-02 16:42:08,052 INFO server {'action': 'presence', 'time': 'Thu Jul  2 16:42:08 2020', 'user': {'account_name': 'Guest'}}
