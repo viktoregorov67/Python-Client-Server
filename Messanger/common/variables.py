@@ -3,7 +3,7 @@
 import logging
 
 # Порт поумолчанию для сетевого ваимодействия
-DEFAULT_PORT = 7777
+DEFAULT_PORT = 7779
 # IP адрес по умолчанию для подключения клиента
 DEFAULT_IP_ADDRESS = '127.0.0.1'
 # Максимальная очередь подключений
@@ -20,9 +20,12 @@ ACTION = 'action'
 TIME = 'time'
 USER = 'user'
 ACCOUNT_NAME = 'account_name'
+SENDER = 'sender'
 
 # Прочие ключи, используемые в протоколе
 PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
 RESPONSE_DEFAULT_IP_ADDRESS = 'response_default_ip_address'
+MESSAGE = 'message'
+MESSAGE_TEXT = 'message_text'
