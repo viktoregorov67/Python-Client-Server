@@ -1000,3 +1000,75 @@
  zfdfvdvdf
 2020-07-16 13:54:03,348 DEBUG decorators Функция message_from_server была вызвана из функции main с параметрами ({'action': 'message', 'sender': 'Guest', 'time': 1594896843.3292608, 'message_text': 'zfdfvdvdf'},), {}.
 2020-07-16 13:54:03,348 DEBUG decorators Функция message_from_server была вызвана из функции main с параметрами ({'action': 'message', 'sender': 'Guest', 'time': 1594896843.3292608, 'message_text': 'zfdfvdvdf'},), {}.
+2020-07-20 17:37:13,067 DEBUG decorators Функция create_arg_parser была вызвана из функции main с параметрами (), {}.
+2020-07-20 17:37:13,086 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7779, имя пользователя: test1
+2020-07-20 17:37:13,089 DEBUG client Сформировано presence сообщение для пользователя test1
+2020-07-20 17:37:13,090 DEBUG client Сформировано presence сообщение для пользователя test3
+2020-07-20 17:37:13,092 DEBUG decorators Функция create_presence была вызвана из функции main с параметрами ('test1',), {}.
+2020-07-20 17:37:13,092 DEBUG decorators Функция create_presence была вызвана из функции main с параметрами ('test3',), {}.
+2020-07-20 17:37:13,105 DEBUG decorators Функция send_message была вызвана из функции main с параметрами (<socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58343), raddr=('127.0.0.1', 7779)>, {'action': 'presence', 'time': 1595255833.0908375, 'user': {'account_name': 'test3'}}), {}.
+2020-07-20 17:37:13,109 DEBUG decorators Функция send_message была вызвана из функции main с параметрами (<socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58342), raddr=('127.0.0.1', 7779)>, {'action': 'presence', 'time': 1595255833.0898366, 'user': {'account_name': 'test1'}}), {}.
+2020-07-20 17:37:13,130 DEBUG decorators Функция create_arg_parser была вызвана из функции main с параметрами (), {}.
+2020-07-20 17:37:13,130 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7779, имя пользователя: test2
+2020-07-20 17:37:13,134 DEBUG client Сформировано presence сообщение для пользователя test2
+2020-07-20 17:37:13,137 DEBUG decorators Функция create_presence была вызвана из функции main с параметрами ('test2',), {}.
+2020-07-20 17:37:13,140 DEBUG decorators Функция send_message была вызвана из функции main с параметрами (<socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58344), raddr=('127.0.0.1', 7779)>, {'action': 'presence', 'time': 1595255833.1348126, 'user': {'account_name': 'test2'}}), {}.
+2020-07-20 17:37:13,141 DEBUG decorators Функция get_message была вызвана из функции main с параметрами (<socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58342), raddr=('127.0.0.1', 7779)>,), {}.
+2020-07-20 17:37:13,142 DEBUG client Разбор сообщения от сервера: {'response': 200}
+2020-07-20 17:37:13,144 DEBUG decorators Функция process_ans была вызвана из функции main с параметрами ({'response': 200},), {}.
+2020-07-20 17:37:13,144 INFO client Соединенеие с сервером установлено. Ответ от сервера: 200 : OK.
+2020-07-20 17:37:13,152 DEBUG decorators Функция get_message была вызвана из функции main с параметрами (<socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58343), raddr=('127.0.0.1', 7779)>,), {}.
+2020-07-20 17:37:13,153 DEBUG client Разбор сообщения от сервера: {'response': 200}
+2020-07-20 17:37:13,156 DEBUG decorators Функция process_ans была вызвана из функции main с параметрами ({'response': 200},), {}.
+2020-07-20 17:37:13,156 INFO client Соединенеие с сервером установлено. Ответ от сервера: 200 : OK.
+2020-07-20 17:37:13,161 INFO client Процессы пользователя запущены
+2020-07-20 17:37:13,161 INFO client Процессы пользователя запущены
+2020-07-20 17:37:13,363 DEBUG decorators Функция get_message была вызвана из функции main с параметрами (<socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58344), raddr=('127.0.0.1', 7779)>,), {}.
+2020-07-20 17:37:13,364 DEBUG client Разбор сообщения от сервера: {'response': 200}
+2020-07-20 17:37:13,366 DEBUG decorators Функция process_ans была вызвана из функции main с параметрами ({'response': 200},), {}.
+2020-07-20 17:37:13,366 INFO client Соединенеие с сервером установлено. Ответ от сервера: 200 : OK.
+2020-07-20 17:37:13,374 INFO client Процессы пользователя запущены
+2020-07-20 17:37:36,505 DEBUG client Сформировано сообщение: {'action': 'message', 'from': 'test3', 'to': 'test1', 'time': 1595255856.5055761, 'message_text': 'Hi'}
+2020-07-20 17:37:36,533 DEBUG decorators Функция send_message была вызвана из функции create_message с параметрами (<socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58343), raddr=('127.0.0.1', 7779)>, {'action': 'message', 'from': 'test3', 'to': 'test1', 'time': 1595255856.5055761, 'message_text': 'Hi'}), {}.
+2020-07-20 17:37:36,533 INFO client Сообщение отправлено клиенту test1
+2020-07-20 17:37:36,536 DEBUG decorators Функция create_message была вызвана из функции user_interactive с параметрами (<socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58343), raddr=('127.0.0.1', 7779)>, 'test3'), {}.
+2020-07-20 17:37:36,643 DEBUG decorators Функция get_message была вызвана из функции message_from_server с параметрами (<socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58342), raddr=('127.0.0.1', 7779)>,), {}.
+2020-07-20 17:37:36,643 INFO client Получено сообщение от пользователя test3:
+ Hi
+2020-07-20 17:39:17,263 DEBUG decorators Функция create_arg_parser была вызвана из функции main с параметрами (), {}.
+2020-07-20 17:39:17,297 DEBUG decorators Функция create_arg_parser была вызвана из функции main с параметрами (), {}.
+2020-07-20 17:39:17,346 DEBUG decorators Функция create_arg_parser была вызвана из функции main с параметрами (), {}.
+2020-07-20 17:39:22,724 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7779, имя пользователя: test1
+2020-07-20 17:39:22,727 DEBUG client Сформировано presence сообщение для пользователя test1
+2020-07-20 17:39:22,729 DEBUG decorators Функция create_presence была вызвана из функции main с параметрами ('test1',), {}.
+2020-07-20 17:39:22,731 DEBUG decorators Функция send_message была вызвана из функции main с параметрами (<socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58367), raddr=('127.0.0.1', 7779)>, {'action': 'presence', 'time': 1595255962.7270222, 'user': {'account_name': 'test1'}}), {}.
+2020-07-20 17:39:22,934 DEBUG decorators Функция get_message была вызвана из функции main с параметрами (<socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58367), raddr=('127.0.0.1', 7779)>,), {}.
+2020-07-20 17:39:22,934 DEBUG client Разбор сообщения от сервера: {'response': 200}
+2020-07-20 17:39:22,936 DEBUG decorators Функция process_ans была вызвана из функции main с параметрами ({'response': 200},), {}.
+2020-07-20 17:39:22,937 INFO client Соединенеие с сервером установлено. Ответ от сервера: 200 : OK.
+2020-07-20 17:39:22,941 INFO client Процессы пользователя запущены
+2020-07-20 17:39:28,164 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7779, имя пользователя: skif
+2020-07-20 17:39:28,166 DEBUG client Сформировано presence сообщение для пользователя skif
+2020-07-20 17:39:28,169 DEBUG decorators Функция create_presence была вызвана из функции main с параметрами ('skif',), {}.
+2020-07-20 17:39:28,171 DEBUG decorators Функция send_message была вызвана из функции main с параметрами (<socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58372), raddr=('127.0.0.1', 7779)>, {'action': 'presence', 'time': 1595255968.166634, 'user': {'account_name': 'skif'}}), {}.
+2020-07-20 17:39:28,371 DEBUG decorators Функция get_message была вызвана из функции main с параметрами (<socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58372), raddr=('127.0.0.1', 7779)>,), {}.
+2020-07-20 17:39:28,371 DEBUG client Разбор сообщения от сервера: {'response': 200}
+2020-07-20 17:39:28,374 DEBUG decorators Функция process_ans была вызвана из функции main с параметрами ({'response': 200},), {}.
+2020-07-20 17:39:28,374 INFO client Соединенеие с сервером установлено. Ответ от сервера: 200 : OK.
+2020-07-20 17:39:28,378 INFO client Процессы пользователя запущены
+2020-07-20 17:39:37,325 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7779, имя пользователя: admin
+2020-07-20 17:39:37,328 DEBUG client Сформировано presence сообщение для пользователя admin
+2020-07-20 17:39:37,330 DEBUG decorators Функция create_presence была вызвана из функции main с параметрами ('admin',), {}.
+2020-07-20 17:39:37,333 DEBUG decorators Функция send_message была вызвана из функции main с параметрами (<socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58373), raddr=('127.0.0.1', 7779)>, {'action': 'presence', 'time': 1595255977.32883, 'user': {'account_name': 'admin'}}), {}.
+2020-07-20 17:39:37,533 DEBUG decorators Функция get_message была вызвана из функции main с параметрами (<socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58373), raddr=('127.0.0.1', 7779)>,), {}.
+2020-07-20 17:39:37,533 DEBUG client Разбор сообщения от сервера: {'response': 200}
+2020-07-20 17:39:37,535 DEBUG decorators Функция process_ans была вызвана из функции main с параметрами ({'response': 200},), {}.
+2020-07-20 17:39:37,536 INFO client Соединенеие с сервером установлено. Ответ от сервера: 200 : OK.
+2020-07-20 17:39:37,539 INFO client Процессы пользователя запущены
+2020-07-20 17:40:02,693 DEBUG client Сформировано сообщение: {'action': 'message', 'from': 'admin', 'to': 'skif', 'time': 1595256002.6939802, 'message_text': 'hello world'}
+2020-07-20 17:40:02,698 DEBUG decorators Функция send_message была вызвана из функции create_message с параметрами (<socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58373), raddr=('127.0.0.1', 7779)>, {'action': 'message', 'from': 'admin', 'to': 'skif', 'time': 1595256002.6939802, 'message_text': 'hello world'}), {}.
+2020-07-20 17:40:02,698 INFO client Сообщение отправлено клиенту skif
+2020-07-20 17:40:02,701 DEBUG decorators Функция create_message была вызвана из функции user_interactive с параметрами (<socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58373), raddr=('127.0.0.1', 7779)>, 'admin'), {}.
+2020-07-20 17:40:02,823 DEBUG decorators Функция get_message была вызвана из функции message_from_server с параметрами (<socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58372), raddr=('127.0.0.1', 7779)>,), {}.
+2020-07-20 17:40:02,823 INFO client Получено сообщение от пользователя admin:
+ hello world
